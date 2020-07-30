@@ -582,11 +582,11 @@
   }
   
   #skill-javascript .skill-bar .percentage-bar {
-    width: 60%;
+    width: 75%;
   }
   
   #skill-javascript .skill-bar .percentage-text {
-    left: 60%;
+    left: 75%;
   }
   
   #skill-design .skill-bar .percentage-bar {
