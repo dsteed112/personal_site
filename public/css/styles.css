@@ -42,6 +42,10 @@
   p {
     margin: 0;
   }
+
+  .github-link:hover{
+    color: #00c3ffb7;
+  }
   
   h1,
   h2,
@@ -412,6 +416,7 @@
     width: 100%;
     padding-bottom: 100%;
     overflow: hidden;
+    margin-top: 1rem;
   }
   
   .portfolio-item img {
