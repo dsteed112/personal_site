@@ -1,9 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome
+    <link rel="stylesheet" href="../css/fontawesome.min.css" /> -->
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <script src="https://use.fontawesome.com/e3cd1fdec2.js"></script>
+
+    <title>Daniel Steed</title>
+
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/7.17.1/firebase-app.js"></script>
@@ -15,7 +34,7 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
 
-    <style media="screen">
+    <!-- <style media="screen">
       body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
       #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
       #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
@@ -28,16 +47,508 @@
         body, #message { margin-top: 0; background: white; box-shadow: none; }
         body { border-top: 16px solid #ffa100; }
       }
-    </style>
+    </style> -->
+
+
+
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    <header>
+      <div class="brand">
+        <a href="#">
+          DS
+        </a>
+      </div>
+
+      <ul class="nav-links">
+        <li class="nav-link">
+          <a href="#about">About</a>
+        </li>
+
+        <li class="nav-link">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+
+        <!-- <li class="nav-link">
+          <a href="#services">Skills</a>
+        </li> -->
+
+        <li class="nav-link">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="mobile-nav">
+        <button class="hamburger">
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <ul class="mobile-nav-links">
+          <li class="nav-link">
+            <a href="#about">About</a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#portfolio">Portfolio</a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#services">Services</a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="inner-text">
+        <h1>Daniel Steed</h1>
+        <h2>Software Developer</h2>
+      </div>
+
+      <div class="social-icons">
+        <ul>
+
+          <li>
+            <a href="https://www.linkedin.com/in/daniel-steed/" target="_blank">
+              <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+
+
+          <li>
+            <a href="#" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="nav-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="heading">About Me</h3>
+          <h4 class="subheading">Get to know me</h4>
+        </div>
+
+        <div class="about-content">
+          <div class="image-wrapper">
+            <img src="../img/person.jpg" alt="Picture of me" />
+          </div>
+
+          <div class="text-content">
+            <h3 class="content-heading">
+              I'm Daniel Steed, a Software Delveloper.
+            </h3>
+
+            <p>
+              I am continually learning modern languages. My background is in the medical field which contributes to my critical thinking skills, ability to thrive in team settings and drive for continuing education. 
+              I am currently working with HTML5, CSS3, Ruby on Rails, JavaScript, React.js and Kotlin. 
+              In my free time I enjoy hiking with my wife and pup, attempting to create things out of wood and playing video games with friends. I am based in Arvada, CO and willing to relocate.
+            </p>
+
+            <hr />
+
+            <div class="text-content-footer">
+              <div class="button-wrapper">
+                <a href="https://docs.google.com/document/d/1nbts1YvZTf-dN-R6O3RR0flCHRQZFp28fIHBTXh7hkQ/edit?usp=sharing" target="_blank" class="primary-button">View/Download my Resume</a>
+              </div>
+
+              <div class="social-icons">
+                <ul>
+                  <li>
+                    <a href="https://www.linkedin.com/in/daniel-steed/" target="_blank">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+
+
+                  <li>
+                    <a href="#" target="_blank">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="nav-section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="heading">Portfolio</h3>
+          <h4 class="subheading">Check out my work</h4>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item" id="item-1">
+            <div class="image-wrapper">
+              <img src="../img/portfolio-item-1.jpg" alt="Portfolio Item 1" />
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="image-wrapper">
+              <img src="../img/portfolio-item-2.jpg" alt="Portfolio Item 2" />
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="image-wrapper">
+              <img src="../img/portfolio-item-3.jpg" alt="Portfolio Item 3" />
+            </div>
+          </div>
+
+          <!-- <div class="portfolio-item">
+            <div class="image-wrapper">
+              <img src="img/portfolio-item-4.jpg" alt="Portfolio Item 4" />
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="image-wrapper">
+              <img src="img/portfolio-item-5.jpg" alt="Portfolio Item 5" />
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <div class="image-wrapper">
+              <img src="img/portfolio-item-6.jpg" alt="Portfolio Item 6" />
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="nav-section" id="services">
+      <!-- <div class="container">
+        <div class="section-header">
+          <h3 class="heading">Services</h3>
+          <h4 class="subheading">How I can help you</h4>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-box">
+            <div class="icon-wrapper">
+              <i class="fa fa-pencil-ruler"></i>
+            </div>
+
+            <h4 class="service-heading">Web Design</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              eu condimentum
+            </p>
+          </div>
+
+          <div class="service-box">
+            <div class="icon-wrapper">
+              <i class="fa fa-pencil-ruler"></i>
+            </div>
+
+            <h4 class="service-heading">Web Design</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              eu condimentum
+            </p>
+          </div>
+
+          <div class="service-box">
+            <div class="icon-wrapper">
+              <i class="fa fa-pencil-ruler"></i>
+            </div>
+
+            <h4 class="service-heading">Web Design</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              eu condimentum
+            </p>
+          </div>
+
+          <div class="service-box">
+            <div class="icon-wrapper">
+              <i class="fa fa-pencil-ruler"></i>
+            </div>
+
+            <h4 class="service-heading">Web Design</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              eu condimentum
+            </p>
+          </div>
+
+          <div class="service-box">
+            <div class="icon-wrapper">
+              <i class="fa fa-pencil-ruler"></i>
+            </div>
+
+            <h4 class="service-heading">Web Design</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              eu condimentum
+            </p>
+          </div>
+
+          <div class="service-box">
+            <div class="icon-wrapper">
+              <i class="fa fa-pencil-ruler"></i>
+            </div>
+
+            <h4 class="service-heading">Web Design</h4>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              eu condimentum
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="skills-section">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="heading">Skills</h3>
+            <h4 class="subheading">I know some things</h4>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill" id="skill-html">
+              <h4 class="skill-heading">HTML5</h4>
+
+              <div class="skill-bar">
+                <div class="background-bar"></div>
+                <div class="percentage-bar"></div>
+                <span class="percentage-text">90%</span>
+              </div>
+            </div>
+
+            <div class="skill" id="skill-css">
+              <h4 class="skill-heading">HTML</h4>
+
+              <div class="skill-bar">
+                <div class="background-bar"></div>
+                <div class="percentage-bar"></div>
+                <span class="percentage-text">80%</span>
+              </div>
+            </div>
+
+            <div class="skill" id="skill-javascript">
+              <h4 class="skill-heading">JavaScript</h4>
+
+              <div class="skill-bar">
+                <div class="background-bar"></div>
+                <div class="percentage-bar"></div>
+                <span class="percentage-text">75%</span>
+              </div>
+            </div>
+
+            <div class="skill" id="skill-design">
+              <h4 class="skill-heading">CSS3</h4>
+
+              <div class="skill-bar">
+                <div class="background-bar"></div>
+                <div class="percentage-bar"></div>
+                <span class="percentage-text">90%</span>
+              </div>
+            </div>
+
+            <div class="skill" id="skill-illustration">
+              <h4 class="skill-heading">React</h4>
+
+              <div class="skill-bar">
+                <div class="background-bar"></div>
+                <div class="percentage-bar"></div>
+                <span class="percentage-text">75%</span>
+              </div>
+            </div>
+
+            <div class="skill" id="skill-editing">
+              <h4 class="skill-heading">Video Editing</h4>
+
+              <div class="skill-bar">
+                <div class="background-bar"></div>
+                <div class="percentage-bar"></div>
+                <span class="percentage-text">85%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="nav-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h3 class="heading">Contact</h3>
+          <h4 class="subheading">Get in touch with me</h4>
+        </div>
+
+        <div class="inner-content">
+          <div class="text-content">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis autem provident, cumque dignissimos ipsum saepe.
+            </p>
+
+            <div class="social-icons">
+              <ul>
+                <li>
+                  <a href="https://www.linkedin.com/in/daniel-steed/" target="_blank">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="contact-block">
+              <div class="icon-wrapper">
+                <i class="fa fa-envelope fa-fw" aria-hidden="true"></i>
+              </div>
+
+              <div class="details">
+                <h5 class="heading">Email Me</h5>
+                <a href="#">dsteed112@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <div class="icon-wrapper">
+                <i class="fa fa-phone fa-fw" aria-hidden="true"></i>
+              </div>
+
+              <div class="details">
+                <h5 class="heading">Call Me</h5>
+                <a href="#">318.243.3370</a>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <div class="icon-wrapper">
+                <i class="fa fa-map-marker fa-fw" aria-hidden="true"></i>
+              </div>
+
+              <div class="details">
+                <h5 class="heading">Mail</h5>
+                <span>5545 Dudley Ct Arvada, CO</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="inner-content">
+          <div class="left-content">
+            <p>&copy; Daniel Steed 2020</p>
+          </div>
+
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/daniel-steed/" target="_blank">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal">
+      <div class="close-button-wrapper">
+        <button class="close-button">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+
+      <div class="image-wrapper">
+        <!-- Image added with JS -->
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <!-- jQuery -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="../js/custom.js"></script>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
@@ -61,5 +572,7 @@
         }
       });
     </script>
+
+
   </body>
 </html>
