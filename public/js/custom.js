@@ -33,7 +33,7 @@ $(document).ready(function () {
   });
 
   // show the portfolio modal on portfolio item click
-  $(".portfolio-item").on("click", function () {
+  $(".image-wrapper").on("click", function () {
     var image = $(this).find("img");
 
     // remove all elements from portfolio modal

@@ -44,7 +44,7 @@
   }
 
   .github-link:hover{
-    color: #00c3ffb7;
+    color: var(--primary);
   }
   
   h1,
@@ -407,7 +407,7 @@
     grid-gap: 20px;
   }
   
-  .portfolio-item:hover {
+  .image-wrapper:hover {
     cursor: pointer;
   }
   
